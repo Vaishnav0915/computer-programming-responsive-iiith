@@ -262,14 +262,14 @@ window.view = {
     	displayFigures: function () {
     		this.drawDots();
     		this.drawFillRectangle();
-    		this.drawCircle(75, 75, '#000000');
-		this.drawCircle(275, 75, '#000000');
-		this.drawCircle(75, 325, '#000000');
-		this.drawCircle(275, 325, '#000000');
-		this.displayText('(x1, y1)', 65, 65); 
-		this.displayText('(x2, y2)', 265, 65);
-		this.displayText('(x3, y3)', 265, 345);
-		this.displayText('(x4, y4)', 75, 345);
+    		this.drawCircle(50, 50, '#000000');
+		this.drawCircle(250, 50, '#000000');
+		this.drawCircle(250, 300, '#000000');
+		this.drawCircle(50, 300, '#000000');
+		this.displayText('(x1, y1)', 50, 50); 
+		this.displayText('(x2, y2)', 250, 50);
+		this.displayText('(x3, y3)', 250, 300);
+		this.displayText('(x4, y4)', 50, 300);
 		this.canvasContext.save();
     	},
 	/* validationInput: check validation of input that is given by user and if input value is valid 
