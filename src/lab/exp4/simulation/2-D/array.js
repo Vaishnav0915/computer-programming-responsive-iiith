@@ -121,7 +121,19 @@ window.view = {
 		var size = this.rowsA * this.colsA
 		for ( i = 0 ; i < size ; i++)
 		{
-			var random = Math.floor(Math.random()*15)
+			var random = Math.floor(Math.random()*(size))+1;
+			var arr= new Array(100)
+			var temp
+			arr=random
+			if(arr[i]>arr[i+1])
+			{
+				temp=arr[i]
+				arr[i+1]=arr[i]
+				arr[i]=temp
+			}
+
+				
+			console.log(arr)
 			this.matrixA.push(random)
 		}
 		this.resetRowsAndCols()
@@ -137,7 +149,7 @@ window.view = {
 		var size = this.rowsB * this.colsB
 		for ( i = 0 ; i < size ; i++)
 		{
-			var random = Math.floor(Math.random()*15)
+			var random = Math.floor(Math.random()*(size))+1;
 			this.matrixB.push(random)
 		}
 		this.disableButton('generateB')
