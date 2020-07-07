@@ -280,7 +280,7 @@ body {
     background-color: #3072b3;
 }
 
-.disk1, .disk2, .disk3, .disk4, .disk5 {
+.disk1, .disk2, .disk3, .disk4, .disk5, .disk6{
     position: absolute;
     height: 5%;
     border-radius: 7px;
@@ -306,6 +306,9 @@ body {
 
 .position5{
     top: 55%;
+}
+.position6{
+    top: 50%;
 }
 
 .disk1 {
@@ -337,7 +340,11 @@ body {
     width: 40%;
     background-color: #ADA692;
 }
-
+.disk6{
+    left: 35%;
+    width: 30%;
+    background-color: #2a65a0;
+}
 .stepExecutionDisplay {
     padding-left: 2%;
     overflow-x: auto;
